@@ -11,6 +11,7 @@ Solutions for LeetCode coding problems implemented in Go
 
 | #  | Title | Level | Topic | Solution |
 | -- | ----- | ----- | ----- | -------- |
+| 0026  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  | <img height="20" alt="easy" src="https://user-images.githubusercontent.com/1853854/112513188-5ecb7380-8d94-11eb-9a90-e73faedb4d05.png"> | Arrays | [:link:](/problems/26.go)
 
 
 
@@ -20,6 +21,3 @@ easy medium hard
 <img height="22" alt="medium" src="https://user-images.githubusercontent.com/1853854/112513197-60953700-8d94-11eb-9b0c-0a7252d4fcc0.png">
 <img height="22" alt="hard" src="https://user-images.githubusercontent.com/1853854/112513203-625efa80-8d94-11eb-8b75-2a4ca5fd11b3.png">
 -->
-
-
-
