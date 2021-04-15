@@ -1,3 +1,9 @@
+# GoLand configuration files
+.idea
+
+# MacOS hidden files
+.DS_Store
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

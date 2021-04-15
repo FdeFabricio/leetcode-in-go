@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/FdeFabricio/pre-commit-golang
+    rev: aec9c7b7e8446bc2058dcc0da831ebc3585161f3
+    hooks:
+      - id: golangci-lint
+      - id: nargs

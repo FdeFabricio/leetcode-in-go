@@ -1,0 +1,21 @@
+linters:
+  disable-all: false
+  enable:
+    - megacheck
+    - govet
+    - gci
+    - gofmt
+    - goimports
+    - golint
+  presets:
+    - unused
+  fast: false
+
+linters-settings:
+  unparam:
+    check-exported: false
+
+issues:
+  exclude-use-default: false
+  exclude:
+  - '(comment on exported).*(should be of the form)'
