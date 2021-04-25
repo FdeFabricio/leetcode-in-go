@@ -11,7 +11,7 @@ Solutions for LeetCode coding problems implemented in Go
 
 | #  | Title | Level | Topic | Solution |
 | -- | ----- | ----- | ----- | -------- |
-| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | <img height="20" alt="easy" src="https://user-images.githubusercontent.com/1853854/112513188-5ecb7380-8d94-11eb-9a90-e73faedb4d05.png"> | Arrays | - |
+| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/) | <img height="20" alt="easy" src="https://user-images.githubusercontent.com/1853854/112513188-5ecb7380-8d94-11eb-9a90-e73faedb4d05.png"> | Arrays | [:link:](/problems/1.go) |
 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | <img height="20" alt="easy" src="https://user-images.githubusercontent.com/1853854/112513188-5ecb7380-8d94-11eb-9a90-e73faedb4d05.png"> | Arrays | [:link:](/problems/26.go) |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | <img height="20" alt="medium" src="https://user-images.githubusercontent.com/1853854/112513197-60953700-8d94-11eb-9b0c-0a7252d4fcc0.png"> | Arrays | - |
 | 0048 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | <img height="20" alt="medium" src="https://user-images.githubusercontent.com/1853854/112513197-60953700-8d94-11eb-9b0c-0a7252d4fcc0.png"> | Arrays | - |
