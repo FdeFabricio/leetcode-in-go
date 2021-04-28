@@ -6,27 +6,37 @@ import (
 	"github.com/FdeFabricio/leetcode-in-go/utils"
 )
 
-func TestCompareIntArrays(t *testing.T) {
+func TestCompare2DStringArray(t *testing.T) {
 	tests := []struct {
 		name string
-		a    []int
-		b    []int
+		a    [][]string
+		b    [][]string
 		want bool
 	}{
-		{name: "true - identical", a: []int{1, 1, 2}, b: []int{1, 1, 2}, want: true},
-		{name: "true - empty", a: []int{}, b: []int{}, want: true},
-		{name: "true - nil", a: nil, b: nil, want: true},
-
-		{name: "false - not identical", a: []int{1, 1, 2}, b: []int{1, 2, 2}, want: false},
-		{name: "false - different length", a: []int{1, 1, 2}, b: []int{1, 1}, want: false},
-		{name: "false - empty", a: []int{1}, b: []int{}, want: false},
-		{name: "false - nil", a: nil, b: []int{1}, want: false},
+		{
+			name: "true - identical",
+			a:    [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}},
+			b:    [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}},
+			want: true,
+		},
+		{
+			name: "true - different order",
+			a:    [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}},
+			b:    [][]string{{"bat"}, {"nat", "tan"}, {"ate", "eat", "tea"}},
+			want: true,
+		},
+		{
+			name: "false - not equal",
+			a:    [][]string{{"eat", "tea", "ate"}, {"tan", "nat"}, {"bat"}},
+			b:    [][]string{{"eat", "tea", "ate"}, {"tan"}, {"nat", "bat"}},
+			want: false,
+		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := utils.CompareIntArrays(tt.a, tt.b); got != tt.want {
-				t.Errorf("CompareIntArrays() = %v, want %v", got, tt.want)
+			if got := utils.Compare2DStringArray(tt.a, tt.b); got != tt.want {
+				t.Errorf("Compare2DStringArray() = %v, want %v", got, tt.want)
 			}
 		})
 	}

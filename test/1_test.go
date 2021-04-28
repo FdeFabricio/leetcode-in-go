@@ -1,10 +1,10 @@
 package test
 
 import (
+	"reflect"
 	"testing"
 
 	"github.com/FdeFabricio/leetcode-in-go/problems"
-	"github.com/FdeFabricio/leetcode-in-go/utils"
 )
 
 var tests = []struct {
@@ -26,7 +26,7 @@ var tests = []struct {
 func TestTwoSum(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := problems.TwoSum(tt.nums, tt.target); !utils.CompareIntArrays(got, tt.want) {
+			if got := problems.TwoSum(tt.nums, tt.target); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("TwoSum() = %v, want %v", got, tt.want)
 			}
 		})
@@ -36,7 +36,7 @@ func TestTwoSum(t *testing.T) {
 func TestTwoSumBruteForce(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := problems.TwoSumBruteForce(tt.nums, tt.target); !utils.CompareIntArrays(got, tt.want) {
+			if got := problems.TwoSumBruteForce(tt.nums, tt.target); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("TwoSumBruteForce() = %v, want %v", got, tt.want)
 			}
 		})
